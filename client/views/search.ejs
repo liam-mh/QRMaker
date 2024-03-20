@@ -1,0 +1,22 @@
+<!-- search.ejs -->
+<html>
+    <head>
+        <title>Search</title>
+    </head>
+    <body>
+        <h1>Search</h1>
+        <form action="/search" method="post">
+            <label for="productId">Enter Product ID:</label>
+            <input type="text" id="productId" name="productId">
+            <button type="submit">Search</button>
+        </form>
+
+        <% if (product) { %>
+            <p>ID: <%= product.values.id %></p>
+            <p>Name: <%= product.values.nameOfAPI %></p>
+            <pre><%= JSON.stringify(product, null, 2) %></pre>
+        <% } else { %>
+            <p>no product</p>
+        <% } %>
+    </body>
+</html>
