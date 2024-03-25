@@ -1,22 +1,21 @@
 const fs = require('fs');
+const { Firestore } = require('@google-cloud/firestore');
+const serviceAccount = require('./gcpKey.json');
 
-function storeData(id, jsonObject) {
-    let data = {};
-    try {
-        const fileData = fs.readFileSync('firebase.json', 'utf8');
-        data = JSON.parse(fileData);
-    } catch (err) {
-        console.error("Error reading file:", err);
-    }
+const firestore = new Firestore({
+  projectId: serviceAccount.project_id,
+  credentials: {
+    client_email: serviceAccount.client_email,
+    private_key: serviceAccount.private_key
+  }
+});
 
-    data[id] = jsonObject;
-    try {
-        fs.writeFileSync('firebase.json', JSON.stringify(data, null, 2), 'utf8');
-        console.log('Data stored successfully!');
-    } catch (err) {
-        console.error("Error writing file:", err);
-    }
+async function storeData(id, data) {
+    const docRef = firestore.collection('products').doc(id);
+    await docRef.set(data);
+    console.log('Data stored successfully!');
 }
+  
 
 function readData(id) {
     try {

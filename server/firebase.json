@@ -1,71 +1,23 @@
 {
-  "5": {
+  "0003420706": {
     "values": {
-      "id": "5",
-      "nameOfAPI": "testAPI2",
-      "brandName": "Elanco",
-      "manufacturer": "ElancoMan",
-      "batchNumber": "100",
-      "batchSize": "100g",
-      "dateOfManufacture": "13-Feb-2024",
-      "dateOfExpiry": "13-Feb-2025",
-      "serialShippingContainerCode": "tr3q4gr",
-      "licenseNumber": "4f3r43r",
-      "storageConditions": "30 or less"
-    },
-    "output": null,
-    "history": [
-      {
-        "date": "20-Mar-2024",
-        "user": "user",
-        "action": "Created",
-        "response": null
-      }
-    ]
-  },
-  "100": {
-    "values": {
-      "id": "11111111",
-      "nameOfAPI": "testAPI",
-      "brandName": "Elanco",
-      "manufacturer": "ElancoMan",
-      "batchNumber": "66",
+      "id": "0003420706",
+      "nameOfAPI": "BUTAPHOSPHAN (Veterinary bulk drug)",
+      "brandName": "M/s. Bayer Hispania S. L.",
+      "manufacturer": "Sabino Alonso Fueyo, 77 Asturias - 33934 La Felguera (Spain) having factory premises at M/s. Bayer Hispania, S.L. , Sabino Alonso Fueyo, 77 La Felguera",
+      "batchNumber": "E119346",
       "batchSize": "500kg",
-      "dateOfManufacture": "10-Mar-2024",
-      "dateOfExpiry": "10-Mar-2034",
-      "serialShippingContainerCode": "43hwg534",
-      "licenseNumber": "543",
-      "storageConditions": "dry"
+      "dateOfManufacture": "02-Dec-2022",
+      "dateOfExpiry": "30-Nov-2025",
+      "serialShippingContainerCode": "NULL",
+      "licenseNumber": "IL/BD-010668-RC/BD-002511",
+      "storageConditions": "Store below 30°C"
     },
     "output": null,
     "history": [
       {
-        "date": "20-Mar-2024",
-        "user": "user",
-        "action": "Created",
-        "response": null
-      }
-    ]
-  },
-  "6543153": {
-    "values": {
-      "id": "6543153",
-      "nameOfAPI": "testAPI",
-      "brandName": "Elanco",
-      "manufacturer": "ElancoMan",
-      "batchNumber": "66",
-      "batchSize": "4534",
-      "dateOfManufacture": "10-Mar-2024",
-      "dateOfExpiry": "10-Mar-2034",
-      "serialShippingContainerCode": "43hwg534",
-      "licenseNumber": "543",
-      "storageConditions": "dry"
-    },
-    "output": null,
-    "history": [
-      {
-        "date": "20-Mar-2024",
-        "user": "user",
+        "date": "24-Mar-2024",
+        "user": "ElancoUser@Elancoah.com",
         "action": "Created",
         "response": null
       }
